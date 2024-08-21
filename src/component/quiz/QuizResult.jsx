@@ -29,7 +29,7 @@ function QuizResult({ subInd, data, SetSubInd }) {
                         <figure style={{ '--background-color': `${data.quizzes[subInd].background}` }}>
                             <img src={data.quizzes[subInd].icon} alt={data.quizzes[subInd].title} />
                         </figure>
-                        <div>HTML</div>
+                        <div>{data.quizzes[subInd].title}</div>
                     </div>
                     <div>{score}</div>
                     <div>out of 10</div>
