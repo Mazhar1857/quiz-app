@@ -1,0 +1,74 @@
+.home {
+    min-height: 100dvh;
+    width: 100%;
+    display: flex;
+
+    gap: 100px;
+
+    Link,
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    button {
+        width: 300px;
+        height: 100px;
+        border-radius: 100vmax;
+        border: 1px solid rgb(131, 131, 240);
+        background-color: rgba(16, 16, 138, 0.2);
+        font-family: inherit;
+        color: white;
+        letter-spacing: 1.5px;
+        font-size: 1.25rem;
+        box-shadow: 0px 0px 20px 3px rgba(0, 0, 61, 0.5);
+        animation: btnAni 10s infinite linear;
+    }
+
+    button:hover {
+        cursor: pointer;
+        animation: disable;
+    }
+
+    button:active {
+        transform: translateX(2.5px) translateY(2.5px);
+    }
+}
+
+@media(min-width:1201px) {
+    .home {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(min-width:601px) and (max-width:1200px) {
+    .home {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:600px) {
+    .home {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+@keyframes btnAni {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}

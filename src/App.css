@@ -1,0 +1,5 @@
+.container {
+    background: radial-gradient(rgb(0, 0, 185), #000036);
+    min-height: 100dvh;
+    padding-block: 0.1px;
+}

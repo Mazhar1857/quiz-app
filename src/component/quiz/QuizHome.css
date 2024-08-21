@@ -1,0 +1,222 @@
+.quiz-home {
+    color: white;
+    display: flex;
+
+    >div:first-child {
+        >div:first-child {
+            font-weight: 200;
+            color: rgb(224, 224, 253);
+        }
+
+        >div:nth-child(2) {
+            font-weight: 500;
+        }
+
+        p {
+            font-style: italic;
+            font-weight: 200;
+        }
+    }
+
+    >div:last-child {
+        display: flex;
+
+        >div {
+            display: flex;
+            background-color: white;
+
+            figure {
+                background-color: var(--background-color);
+                aspect-ratio: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            >div:last-child {
+                font-weight: 500;
+                color: black;
+            }
+        }
+
+
+
+    }
+}
+
+@media(min-width:1201px) {
+    .quiz-home {
+
+        width: 1160px;
+        margin-inline: auto;
+        justify-content: space-between;
+
+        >div:first-child {
+            >div:first-child {
+                font-size: 4rem;
+            }
+
+            >div:nth-child(2) {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 1.25rem;
+                margin-top: 3rem;
+            }
+        }
+
+        >div:last-child {
+            flex-direction: column;
+            gap: 24px;
+
+            >div {
+                align-items: center;
+                gap: 32px;
+                height: 80px;
+                width: 550px;
+                border-radius: 12px;
+                padding-inline: 15px;
+
+
+                figure {
+                    width: 50px;
+                    border-radius: 12px;
+
+                    img {
+                        width: 30px;
+                    }
+                }
+
+                >div:last-child {
+                    font-size: 1.75rem;
+                }
+            }
+
+            >div:hover {
+                cursor: pointer;
+                outline: 3px solid rgb(131, 131, 240);
+            }
+        }
+    }
+}
+
+@media(min-width:601px) and (max-width:1200px) {
+
+    .quiz-home {
+        width: 768px;
+        margin-inline: auto;
+        flex-direction: column;
+        padding-inline: 4rem;
+
+        >div:first-child {
+            >div:first-child {
+                font-size: 4rem;
+            }
+
+            >div:nth-child(2) {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 1.25rem;
+                margin-top: 1rem;
+            }
+        }
+
+        >div:last-child {
+            width: 100%;
+            flex-direction: column;
+            gap: 24px;
+            margin-top: 4rem;
+
+            >div {
+                align-items: center;
+                width: 100%;
+                gap: 32px;
+                height: 80px;
+                border-radius: 12px;
+                padding-inline: 15px;
+
+
+                figure {
+                    width: 50px;
+                    border-radius: 12px;
+
+                    img {
+                        width: 30px;
+                    }
+                }
+
+                >div:last-child {
+                    font-size: 1.75rem;
+                }
+            }
+
+            >div:hover {
+                cursor: pointer;
+                outline: 3px solid rgb(131, 131, 240);
+            }
+        }
+    }
+
+}
+
+@media(max-width:600px) {
+    .quiz-home {
+        width: 100%;
+        flex-direction: column;
+        padding-inline: 1.5rem;
+
+        >div:first-child {
+            >div:first-child {
+                font-size: 2rem;
+            }
+
+            >div:nth-child(2) {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 0.875rem;
+                margin-top: 1rem;
+            }
+        }
+
+        >div:last-child {
+            width: 100%;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 2.5rem;
+
+            >div {
+                align-items: center;
+                width: 100%;
+                gap: 16px;
+                height: 64px;
+                border-radius: 12px;
+                padding-inline: 12px;
+
+
+                figure {
+                    width: 40px;
+                    border-radius: 8px;
+
+                    img {
+                        width: 25px;
+                    }
+                }
+
+                >div:last-child {
+                    font-size: 1.125rem;
+                }
+            }
+
+            >div:hover {
+                cursor: pointer;
+                outline: 3px solid rgb(131, 131, 240);
+            }
+        }
+    }
+}
