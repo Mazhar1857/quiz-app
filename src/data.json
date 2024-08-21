@@ -2,7 +2,7 @@
     "quizzes": [
         {
             "title": "HTML",
-            "icon": "/icon-html.svg",
+            "icon": "./icon-html.svg",
             "background": "#fff1e9",
             "questions": [
                 {
@@ -109,7 +109,7 @@
         },
         {
             "title": "CSS",
-            "icon": "/icon-css.svg",
+            "icon": "./icon-css.svg",
             "background": "#e0fdef",
             "questions": [
                 {
@@ -216,7 +216,7 @@
         },
         {
             "title": "JavaScript",
-            "icon": "/icon-js.svg",
+            "icon": "./icon-js.svg",
             "background": "#ebf0ff",
             "questions": [
                 {
@@ -322,133 +322,114 @@
             ]
         },
         {
-            "title": "Accessibility",
-            "icon": "/icon-accessibility.svg",
-            "background": "#f6e7ff",
+            "title": "React",
+            "icon": "./icon-react.png",
+            "background": "#e0f7fa",
             "questions": [
                 {
-                    "question": "What does 'WCAG' stand for?",
+                    "question": "What is React?",
                     "options": [
-                        "Web Content Accessibility Guidelines",
-                        "Web Compliance Accessibility Guide",
-                        "Web Content Accessibility Goals",
-                        "Website Compliance and Accessibility Guidelines"
+                        "A JavaScript library for building user interfaces",
+                        "A framework for backend development",
+                        "A database management system",
+                        "A CSS preprocessor"
                     ],
-                    "answer": "Web Content Accessibility Guidelines"
+                    "answer": "A JavaScript library for building user interfaces"
                 },
                 {
-                    "question": "Which element is used to provide alternative text for images for screen reader users?",
+                    "question": "What is the virtual DOM?",
                     "options": [
-                        "<alt>",
-                        "<figcaption>",
-                        "<description>",
-                        "<img alt='description'>"
+                        "A copy of the real DOM that is stored in memory",
+                        "A feature to enhance CSS styling",
+                        "A tool for managing browser history",
+                        "A plugin for React components"
                     ],
-                    "answer": "<img alt='description'>"
+                    "answer": "A copy of the real DOM that is stored in memory"
                 },
                 {
-                    "question": "What does ARIA stand for in web development?",
+                    "question": "Which hook is used to manage state in a functional component?",
                     "options": [
-                        "Accessible Rich Internet Applications",
-                        "Advanced Responsive Internet Assistance",
-                        "Accessible Responsive Internet Applications",
-                        "Automated Responsive Internet Actions"
+                        "useContext",
+                        "useReducer",
+                        "useState",
+                        "useEffect"
                     ],
-                    "answer": "Accessible Rich Internet Applications"
+                    "answer": "useState"
                 },
                 {
-                    "question": "Which of the following is not a principle of the WCAG?",
+                    "question": "How do you pass data from a parent component to a child component?",
                     "options": [
-                        "Perceivable",
-                        "Dependable",
-                        "Operable",
-                        "Understandable"
+                        "Using hooks",
+                        "Using context",
+                        "Using props",
+                        "Using Redux"
                     ],
-                    "answer": "Dependable"
+                    "answer": "Using props"
                 },
                 {
-                    "question": "Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?",
+                    "question": "What is JSX?",
                     "options": [
-                        "3:1",
-                        "4.5:1",
-                        "7:1",
-                        "2:1"
+                        "A JavaScript extension that allows writing HTML in JavaScript",
+                        "A type of CSS",
+                        "A server-side rendering library",
+                        "A database querying language"
                     ],
-                    "answer": "4.5:1"
+                    "answer": "A JavaScript extension that allows writing HTML in JavaScript"
                 },
                 {
-                    "question": "Which of the following elements is inherently focusable, meaning it can receive focus without a 'tabindex' attribute?",
+                    "question": "Which of the following is not a lifecycle method in a React class component?",
                     "options": [
-                        "<div>",
-                        "<span>",
-                        "<a href='...'>",
-                        "<p>"
+                        "componentDidMount",
+                        "componentWillUnmount",
+                        "shouldComponentUpdate",
+                        "componentWillUpdateNow"
                     ],
-                    "answer": "<a href='...'>"
+                    "answer": "componentWillUpdateNow"
                 },
                 {
-                    "question": "What is the purpose of the 'lang' attribute in an HTML page?",
+                    "question": "How do you handle side effects in a functional component?",
                     "options": [
-                        "To specify the scripting language",
-                        "To define the character set",
-                        "To indicate the language of the page content",
-                        "To declare a language pack"
+                        "Using useEffect hook",
+                        "Using useState hook",
+                        "Using useReducer hook",
+                        "Using useContext hook"
                     ],
-                    "answer": "To indicate the language of the page content"
+                    "answer": "Using useEffect hook"
                 },
                 {
-                    "question": "Which guideline ensures that content is accessible by keyboard as well as by mouse?",
+                    "question": "What is the purpose of the key prop in React?",
                     "options": [
-                        "Keyboard Accessible",
-                        "Mouse Independence",
-                        "Device Independence",
-                        "Operable Controls"
+                        "To uniquely identify elements in a list",
+                        "To style elements",
+                        "To manage component state",
+                        "To pass data between components"
                     ],
-                    "answer": "Keyboard Accessible"
+                    "answer": "To uniquely identify elements in a list"
                 },
                 {
-                    "question": "What is the role of 'skip navigation' links in web accessibility?",
+                    "question": "Which method would you use to update state in a React class component?",
                     "options": [
-                        "To skip over primary navigation to the main content",
-                        "To provide shortcuts to different sections of the website",
-                        "To help users skip unwanted sections like advertisements",
-                        "To bypass broken links in the navigation"
+                        "setState",
+                        "updateState",
+                        "modifyState",
+                        "changeState"
                     ],
-                    "answer": "To skip over primary navigation to the main content"
+                    "answer": "setState"
                 },
                 {
-                    "question": "Which of these tools can help in checking the accessibility of a website?",
+                    "question": "What does the useContext hook do in React?",
                     "options": [
-                        "W3C Validator",
-                        "Google Lighthouse",
-                        "CSS Validator",
-                        "JavaScript Console"
+                        "Manages the component's local state",
+                        "Provides a way to consume context values in functional components",
+                        "Handles side effects in components",
+                        "Connects the component to the Redux store"
                     ],
-                    "answer": "Google Lighthouse"
+                    "answer": "Provides a way to consume context values in functional components"
                 }
             ]
         }
     ],
     "interview-questions": [
-        {
-            "title": "HTML",
-            "icon": "./icon-accessibility.svg",
-            "questions": []
-        },
-        {
-            "title": "Css",
-            "icon": "./icon-accessibility.svg",
-            "questions": []
-        },
-        {
-            "title": "JavaScript",
-            "icon": "./icon-accessibility.svg",
-            "questions": []
-        },
-        {
-            "title": "React",
-            "icon": "./icon-accessibility.svg",
-            "questions": []
-        }
+     
     ]
 }
